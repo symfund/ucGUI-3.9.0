@@ -65,9 +65,6 @@
     <ClCompile Include="..\Sample\GUI\2DGL_DrawJPEG.c">
       <Filter>Application</Filter>
     </ClCompile>
-    <ClCompile Include="..\Sample\Application\Black.c">
-      <Filter>Application</Filter>
-    </ClCompile>
     <ClCompile Include="Application\MainTask.c">
       <Filter>Application</Filter>
     </ClCompile>
@@ -77,13 +74,7 @@
     <ClCompile Include="Application\MicriumLogo_1bpp.c">
       <Filter>Application</Filter>
     </ClCompile>
-    <ClCompile Include="..\Sample\Application\ShowBmp.c">
-      <Filter>Application</Filter>
-    </ClCompile>
     <ClCompile Include="..\Sample\Application\SimSun_13.c">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Sample\Application\White.c">
       <Filter>Application</Filter>
     </ClCompile>
     <ClCompile Include="GUI\AntiAlias\GUIAAArc.c">
@@ -2047,6 +2038,21 @@
     </ClCompile>
     <ClCompile Include="System\Simulation\SIM_X.c">
       <Filter>System\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sample\ucgui394_sample\memdev_autodev.c">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sample\ucgui394_sample\memdev_banding.c">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sample\ucgui394_sample\memdev_drawgraph.c">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sample\ucgui394_sample\memdev_memdev.c">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sample\ucgui394_sample\wm_redraw.c">
+      <Filter>Application</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

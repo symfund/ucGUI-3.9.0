@@ -134,11 +134,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Sample\Application\Black.c" />
-    <ClCompile Include="..\Sample\Application\ShowBmp.c" />
     <ClCompile Include="..\Sample\Application\SimSun_13.c" />
-    <ClCompile Include="..\Sample\Application\White.c" />
     <ClCompile Include="..\Sample\GUI\2DGL_DrawJPEG.c" />
+    <ClCompile Include="..\Sample\ucgui394_sample\memdev_autodev.c" />
+    <ClCompile Include="..\Sample\ucgui394_sample\memdev_banding.c" />
+    <ClCompile Include="..\Sample\ucgui394_sample\memdev_drawgraph.c" />
+    <ClCompile Include="..\Sample\ucgui394_sample\memdev_memdev.c" />
+    <ClCompile Include="..\Sample\ucgui394_sample\wm_redraw.c" />
     <ClCompile Include="Application\MainTask.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>

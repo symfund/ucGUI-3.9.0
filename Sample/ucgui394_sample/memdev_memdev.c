@@ -53,7 +53,7 @@ static void _Draw(int Delay) {
 *
 *       _DemoMemDev
 */
-static void _DemoMemDev(void) {
+void _DemoMemDev(void) {
   GUI_MEMDEV_Handle hMem;
   int i;
   GUI_SetBkColor(GUI_BLACK);
@@ -85,20 +85,7 @@ static void _DemoMemDev(void) {
     _Draw(400);
     GUI_Delay(400);
     GUI_ClearRect(0, 130, 319, 219);
+    break;
   }
   GUI_MEMDEV_Delete(hMem); /* Destroy memory device */
-}
-
-/*******************************************************************
-*
-*       MainTask
-*
-*       Demonstrates the use of memory devices
-*
-********************************************************************
-*/
-
-void MainTask(void) {
-  GUI_Init();
-  _DemoMemDev();
 }

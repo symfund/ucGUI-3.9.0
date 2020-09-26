@@ -86,7 +86,7 @@ static void _DrawIt(void * pData) {
 *
 *       _DemoBandingMemdev
 */
-static void _DemoBandingMemdev(void) {
+void _DemoBandingMemdev(void) {
   tDrawItContext DrawItContext;
   int i, swap=0;
   GUI_SetBkColor(GUI_BLACK);
@@ -121,20 +121,6 @@ static void _DemoBandingMemdev(void) {
         GUI_Delay(20); /* Use a short delay only in the simulation */
       #endif
     }
+    break;
   }
 }
-
-/*******************************************************************
-*
-*       MainTask
-*
-*       Demonstrates banding memory devices
-*
-********************************************************************
-*/
-
-void MainTask(void) {
-  GUI_Init();
-  _DemoBandingMemdev();
-}
-

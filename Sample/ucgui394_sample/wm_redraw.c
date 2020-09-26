@@ -86,7 +86,7 @@ static void _MoveWindow(const char* pText) {
 *
 *       _DemoRedraw
 */
-static void _DemoRedraw(void) {
+void _DemoRedraw(void) {
   WM_CALLBACK* _cbOldBk;
   GUI_SetBkColor(GUI_BLACK);
   GUI_Clear();
@@ -106,18 +106,6 @@ static void _DemoRedraw(void) {
     _MoveWindow("Background has been redrawn");
     /* Delete callback for Background window */
     WM_SetCallback(WM_HBKWIN, _cbOldBk);
+    break;
   }
-}
-
-/*******************************************************************
-*
-*       MainTask
-*
-*       Demonstrates redrawing
-*
-********************************************************************
-*/
-void MainTask(void) {
-  GUI_Init();
-  _DemoRedraw();
 }

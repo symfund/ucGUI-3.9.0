@@ -161,7 +161,7 @@ static void _GetRandomData(I16 * paY, int Time, int n) {
 *
 *       _DemoRandomGraph
 */
-static void _DemoRandomGraph(void) {
+void _DemoRandomGraph(void) {
   PARAM Param;
   int tDiff, t0;
   GUI_RECT Rect = {19, (LCD_YSIZE - 20) - YSIZE, (LCD_XSIZE - 2), (LCD_YSIZE - 21)};
@@ -205,7 +205,7 @@ static void _GetSineData(I16 * paY, int n) {
 *
 *       _DemoSineWave
 */
-static void _DemoSineWave(void) {
+void _DemoSineWave(void) {
   PARAM Param;
   I16 * pStart;
   int t0, Cnt = 0;
@@ -250,7 +250,7 @@ static void _DrawOrData(GUI_COLOR Color, I16 * paY) {
 *
 *       _DemoOrData
 */
-static void _DemoOrData(void) {
+void _DemoOrData(void) {
   int i;
   PARAM Param;
   GUI_RECT Rect = {19, (LCD_YSIZE - 20) - YSIZE, (LCD_XSIZE - 2), (LCD_YSIZE - 21)};
@@ -270,21 +270,3 @@ static void _DemoOrData(void) {
   GUI_ALLOC_Free(hMem);
 }
 
-/*******************************************************************
-*
-*       MainTask
-*
-*       Demonstrates the use of a memory device
-*
-********************************************************************
-*/
-
-void MainTask(void) {
-  GUI_Init();
-  _Label();
-  while(1) {
-    _DemoRandomGraph();
-    _DemoSineWave();
-    _DemoOrData();
-  }
-}

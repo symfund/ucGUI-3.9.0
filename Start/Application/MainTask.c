@@ -30,7 +30,7 @@ extern const GUI_BITMAP bmMicriumLogo_1bpp;
   *
   *******************************************************************
 */
-void MainTask(void) {
+void MainTask9(void) {
   int Cnt =0;
   int i,YPos;
   int LCDXSize = LCD_GET_XSIZE();
@@ -72,4 +72,20 @@ void MainTask(void) {
   GUI_SetFont(&GUI_Font10S_1);
   GUI_DispStringHCenterAt("Micriµm Inc.",LCDXSize/2,YPos+60);;
   GUI_Delay(1000);
+}
+
+void MainTask(void) {
+    GUI_Init();
+
+    _DemoScale();
+    _DemoBandingMemdev();
+
+    _DemoRandomGraph();
+    _DemoSineWave();
+    _DemoOrData();
+
+    _DemoMemDev();
+
+    _DemoRedraw();
+
 }

@@ -214,7 +214,7 @@ static void _Draw(void * p) {
 *
 *       _DemoScale
 */
-static void _DemoScale(void) {
+void _DemoScale(void) {
   int Cnt;
   int tDiff, t0;
   PARAM Param;            /* Parameters for drawing routine */
@@ -254,22 +254,8 @@ static void _DemoScale(void) {
     GUI_MEMDEV_DeleteAuto(&AutoDev);
     GUI_Delay(3000);
     GUI_ClearRect(0, 70, 319, 239);
+    break;
   }
 }
 
-/*******************************************************************
-*
-*       MainTask
-*
-*       Demonstrates the use of an auto memory device
-*
-********************************************************************
-*/
-
-void MainTask(void) {
-  GUI_Init();
-  while(1) {
-    _DemoScale();
-  }
-}
 
