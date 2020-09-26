@@ -83,8 +83,8 @@ const VKEY2KEY aVKey2Key[] = {
 **********************************************************************
 */
 
-static int       _xPosLCD = -1;     // position of the LCD
-static int       _yPosLCD = -1;     // position of the LCD
+static int       _xPosLCD = 0;     // position of the LCD
+static int       _yPosLCD = 0;     // position of the LCD
 static int       _rgbTransparent;   // color for transparency
 static int       _MagX = 1;          // Magnification X
 static int       _MagY = 1;          // Magnification Y
@@ -1505,8 +1505,9 @@ static int _WinMain_NoClean(HINSTANCE hInstance,
     return 1;
   }
   _LOG_y0 = _GetYSizePhys()+30;
+
   /* Use device simulation or standard window */
-/*  if (_ahBmpDevice[0] && (_xPosLCD >= 0)) {
+  if (_ahBmpDevice[0] && (_xPosLCD >= 0)) {
     BITMAP bmpDevice;
     GetObject(_ahBmpDevice[0], sizeof(bmpDevice), &bmpDevice);
     _hWndMain = CreateWindowEx(0, // Extended style -> Use WS_EX_TOPMOST if you want window to stay on top
@@ -1523,18 +1524,8 @@ static int _WinMain_NoClean(HINSTANCE hInstance,
       return FALSE;
     _CreateWndLCD();
     _LOG_Create(_hInst, _hWndMain);
-  }*/
-//////houhh 20061023...
-    _hWndMain = CreateWindow(acClassNameMain, BRANDING_GetAppNameLong(),
-                             WS_OVERLAPPEDWINDOW | WS_CLIPCHILDREN | WS_VISIBLE, CW_USEDEFAULT, 0, 
-                             _GetXSizePhys() + 250, 
-                             _GetYSizePhys() + 150,
-                             NULL, NULL, hInstance, NULL);
-    if (!_hWndMain)
-      return FALSE;
-    _CreateWndLCD();
-    _LOG_Create(_hInst, _hWndMain);
-//////
+  }
+
   ShowWindow(_hWndMain, 1);
   _THREAD_StartApplication();
   hAccelTable = LoadAccelerators(hInstance, (LPCTSTR)IDC_SIMULATION);

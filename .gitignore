@@ -1,0 +1,13 @@
+
+*.ipch
+*.sbr
+*.obj
+*.pdb
+*.tlog
+*.db
+*.db-shm
+*.db-wal
+*.opendb
+*.bsc
+*.log
+*.idb

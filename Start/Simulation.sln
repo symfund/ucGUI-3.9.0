@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimulationShip", "Simulation.vcxproj", "{F0AD24CC-E61E-459F-BFCD-A72352C8EC7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0AD24CC-E61E-459F-BFCD-A72352C8EC7C}.Debug|x86.ActiveCfg = Debug|Win32
+		{F0AD24CC-E61E-459F-BFCD-A72352C8EC7C}.Debug|x86.Build.0 = Debug|Win32
+		{F0AD24CC-E61E-459F-BFCD-A72352C8EC7C}.Release|x86.ActiveCfg = Release|Win32
+		{F0AD24CC-E61E-459F-BFCD-A72352C8EC7C}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DBC38C2-40F1-4308-9076-35A3038F15B0}
+	EndGlobalSection
+EndGlobal

@@ -30,7 +30,7 @@ extern const GUI_BITMAP bmMicriumLogo_1bpp;
   *
   *******************************************************************
 */
-void MainTask_test(void) {
+void MainTask(void) {
   int Cnt =0;
   int i,YPos;
   int LCDXSize = LCD_GET_XSIZE();
@@ -68,7 +68,7 @@ void MainTask_test(void) {
   GUI_DispStringHCenterAt("www.micrium.com",LCDXSize/2,YPos);
   GUI_Delay(1000);
   GUI_SetColor(GUI_RED);
-  GUI_DispStringHCenterAt("© 2004\n", LCDXSize/2,YPos+30);
+  GUI_DispStringHCenterAt("?2004\n", LCDXSize/2,YPos+30);
   GUI_SetFont(&GUI_Font10S_1);
   GUI_DispStringHCenterAt("Micriµm Inc.",LCDXSize/2,YPos+60);;
   GUI_Delay(1000);
